@@ -1,0 +1,66 @@
+
+<body class="container-fluid">
+   <section class="search">
+      <form class="row text-center">
+         <div id="query-box" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+            <h1>Welcome to &nbsp;Wikipedia Viewer</h1> 
+            <div class="input-group">
+               <input id="query" type="text" class="form-control" accept="audio/*" autocomplete="on" autofocus aria-label="write here what you want to learn about">
+               <span class="input-group-btn">
+                 <button id="query-button" class="btn btn-default" type="submit">Search!</button>
+               </span>
+            </div><!-- /input-group -->
+         </div> <!-- col -->
+      </form> <!-- row -->
+      <div class="row">
+         <div class="col-xs-8 col-xs-offset-2 text-center">
+            <div id="no-query" class="hidden">
+               <h2>Don't resign from a chance to learn something new.<br/>Try <span class="accent-hint">Surprice Me</span> option.</h2>
+            </div>
+            <button id="random" class="btn btn-default">
+               Surprice me!
+            </button>
+         </div> <!-- col -->
+      </div> <!-- row -->
+   </section> 
+   
+   <section class="intro row">
+      <img id="intro-image" alt="The WikiLogo" class="img-responsive center-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png"/>
+   </section> <!-- row -->
+   
+   <section class="random-result row">
+      <div class="yellow-box col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+         <h2 id="random-result-title"></h2>
+         <div id="random-result"></div>
+      </div> <!-- col -->
+   </section> <!-- row -->
+   
+   <section class="list-result row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+         <ul id="article-list"></ul>
+      </div> <!-- col -->
+   </section>  <!-- row -->
+   
+   <footer>
+      <div id="back-to-top" class="row text-right hidden">
+         <a id="arrow-top" href="#query-box" class="accent">
+            back to top
+            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+         </a>
+      </div> <!-- row -->
+      <div class="row text-center">
+         <div class="col-xs-12 col-sm-4">
+            More on <a href="https://www.wikipedia.org/" target="_blank" class="accent-link">Wikipedia</a>
+         </div>
+         <div class="col-xs-12 col-sm-4">
+            Wiki Viewer 
+            
+         </div>
+         <div class="col-xs-12 col-sm-4">
+            <br/>
+             <a href="https://codepen.io/webspinner1989/#" target="_blank" class="accent-link">Malton</a> 2017
+         </div>
+      </div><!-- row -->
+   </footer> 
+</body> 
+</html>

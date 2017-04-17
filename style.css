@@ -1,0 +1,140 @@
+
+
+body {
+   font-family: 'Roboto Slab', serif;
+   color: #424242;
+   background-image: linear-gradient(silver,black); 
+}
+h1, #no-query h2, .btn {
+   color: #FFF;
+}
+#no-query h2 {
+   font-size: 1.5em;
+}
+.list-result ul {
+   padding-left: 0;
+}
+.list-result li h2, #random-result-title {
+   font-size: 2em;
+   background-color: #0097A7;
+   padding: 0;
+   border-radius: 0 10px 10px 0;
+   margin-left: -1em;
+}
+.list-result li h2 a, #random-result-title a {
+   display: block;
+   padding: 1em;
+   color: #FFF;
+}
+.list-result li {
+   list-style-type: none;
+   background-color: #B2EBF2;
+   margin-bottom: 2em;
+   padding: 1em 2em 2em;
+   border-radius: 10px;
+}
+.list-result li h2 a:hover,
+.list-result li h2 a:focus,
+.list-result li h2 a:active,
+#random-result-title a:hover, 
+#random-result-title a:focus,
+#random-result-title a:active {
+   background-color: #F50057;
+   border-radius: 0 10px 10px 0;
+}
+
+#query-button {
+   background-color: #FF4081;
+}
+#random, .list-result {
+   margin-top: 1.5em;
+}
+#random {
+   background-color: transparent;
+   border-color: #FFF;
+}
+#random.look {
+   background-color: #FFECB3;
+   color: #616161;
+}
+#random:hover,
+#query-button:hover,
+#random:focus,
+#query-button:focus {
+   color: #FFF;
+   background-color: #F50057;
+}
+.random-result {
+   display: none;
+}
+.random-result > * {
+   background-color: #FFECB3;
+   padding: 0 2em 2em;
+}
+.random-result, .intro {
+   margin-top: 5em;
+}
+#intro-image {
+   height: 300px;
+   width: auto;
+   border-radius: 50%;
+}
+footer {
+   color: #B2EBF2;
+   margin-bottom: 5em;
+}
+footer div {
+   padding-bottom: 2em;
+}
+.accent {
+   color: #FFF;
+}
+.accent-link {
+   color: #FFF;
+}
+.accent-hint {
+   color: #FFECB3;
+}
+footer a:hover,
+footer a:focus {
+   color: #F50057;
+}
+#arrow-top {
+   padding-right: 1em;
+}
+.list-result p, #random-result p,
+.list-result li, #random-result li {
+   font-size: 1.2em;
+}
+.yellow-box {
+   overflow: hidden;
+   border-radius: 0 10px 10px 0;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1200px){
+   #no-query h2 {
+      font-size: 2em;
+   }
+   footer {
+      margin-top: 100px;
+   }
+   .search {
+      padding-top: 3em;
+   }
+   #arrow-top {
+      padding-right: 5em;
+   }
+}
+@media screen and (max-width:1199px){
+   footer {
+      margin-top: 5em;
+   }
+}
+@media screen and (max-width:767px){
+   .list-result p, #random-result p,
+   .list-result li, #random-result li {
+      font-size: 1em;
+   }
+}
